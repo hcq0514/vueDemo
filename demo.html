@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<script type="text/javascript" src="js/mvvm/compile.js"></script>
+<script type="text/javascript" src="js/mvvm/mvvm.js"></script>
+<script type="text/javascript" src="js/mvvm/observer.js"></script>
+<script type="text/javascript" src="js/mvvm/watcher.js"></script>
+<script type="text/javascript" src="js/vue.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    {{ message }}
+</div>
+<script>
+    var app = new Vue({
+        el:'#app',
+        data:{
+            message : 'hello world'
+        }
+    })
+</script>
+</body>
+</html>
